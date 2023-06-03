@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="25dp"
+        android:textColor="@color/black">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:text="内容"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="时间"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

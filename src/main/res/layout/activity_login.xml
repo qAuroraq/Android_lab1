@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/image2">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="密码记事本"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            app:drawableLeftCompat="@drawable/image1">
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_name"
+            android:layout_marginTop="30dp"
+            android:hint="用户名/手机号"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textColorHint="@color/white">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_pwd"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:hint="密码"
+            android:textColorHint="@color/white">
+        </EditText>
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:onClick="login"
+            android:textSize="20sp">
+        </Button>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:background="@drawable/setbt_bg"
+                android:textColor="#00aaff"
+                android:textSize="18sp">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_register"
+                android:layout_alignParentEnd="true"
+                android:onClick="register"
+                android:text="注册用户"
+                android:background="@drawable/setbt_bg"
+                android:textColor="#00aaff"
+                android:textSize="18sp">
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="275dp"
+        android:text="登录时同意条款"
+        android:textColor="#00aaff"
+        android:textSize="20sp">
+
+    </TextView>
+</RelativeLayout>
